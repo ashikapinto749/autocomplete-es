@@ -1,0 +1,13 @@
+_mapping 
+{"properties":
+{"title":
+  {"type":"completion",
+   "fields":
+             {"completion":
+                      {"max_input_length":100,
+                        "analyzer":"standard",
+                       "preserve_position_increments":true,
+                       "type":"completion",
+                         "preserve_separators":true},
+                     "keyword":{"ignore_above":256,"type":"keyword"}
+}}}}
